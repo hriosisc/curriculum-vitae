@@ -1,0 +1,258 @@
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40; 
+    --apple: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    --montserrat: "Montserrat", sans-serif;
+
+    /* Sizes */
+    --header-x: 8.5in;
+    --header-y: 2in;
+
+    --aside-x: 2.3in;
+    --aside-y: 11in;
+
+    --space-x: 0.1in;
+    --space-y: 0.25in;
+
+  }
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--montserrat);
+}
+
+@media print {
+
+    div#app {
+        background: whitesmoke;
+        width: 8.5in;
+        height: 11in;
+        position: relative; 
+    }
+
+    header { 
+        position: fixed;
+        background-color: var(--gray-dark);
+        width: var(--header-x);
+        height: var(--header-y);
+        top: var(--space-y);
+        left: 0;
+        z-index: 25;
+    }
+    
+    header div.name-title {
+        position: relative;
+        left: calc(var(--aside-x) + var(--space-x)); 
+        width: calc(8.5in - var(--aside-x) - var(--space-x));
+        height: var(--header-y);
+        display: flex; 
+        flex-direction: column;
+        justify-content: center; 
+    }
+
+    header h1 { color: white; margin-left: 1.5rem; text-transform: uppercase;}
+
+    header h1.name {
+        font-size: 3.5rem;
+        font-weight: lighter;
+    }
+
+    header h1.lastname {
+        font-size: 4rem; 
+        font-weight: 400;
+    }
+
+    header h1.position { 
+        letter-spacing: 1px;
+        font-size: 16px;
+        font-weight: 500;    }
+
+    aside { 
+        position: fixed;
+        background-color: var(--gray);
+        width: var(--aside-x);
+        height: var(--aside-y);
+        top: 0;
+        left: var(--space-x);
+        z-index: 28;
+    }
+
+    aside div.profile-pic-container { 
+        position: relative;
+        top: var(--space-y); 
+        left: 0;
+        width: var(--aside-x);
+        height: var(--header-y);
+    }
+
+    aside div.profile-pic-container img{
+        width: 70%;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        border: 3px solid whitesmoke;
+    } 
+
+    aside div.resume-information {
+        display: block;
+        position: relative;
+        top: var(--space-y);
+        margin: 1rem;
+    }
+
+    aside div.resume-information h1.profile {
+        color: white;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    aside div.resume-information p {
+        color: white;
+        font-size: 12px;
+        margin-top: 1rem;
+        text-align: justify;
+    }
+    aside div.resume-information hr {
+        color:white;
+        margin: 0.5rem auto;
+        width: 100%;
+        opacity: 0.5;
+        
+    }
+
+    main { 
+        position: fixed;
+        width: calc(8.5in - var(--aside-x) - var(--space-x));
+        height: 100%;
+        top: calc(var(--space-y) + var(--header-y));
+        left: calc(var(--space-x) + var(--aside-x));
+        padding: 1rem 1.5rem;
+    }
+  
+    main div.row { 
+        margin-bottom: 2rem;
+    }
+
+    main div.row h1.title {
+        color: var(--dark);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+    }
+
+    div.exp {
+        margin: 1rem;
+    }
+  
+    div.exp h1.exp-company,
+    div.exp h2.exp-title,
+    div.exp h3.since-to {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+    div.exp h3.since-to { 
+        color: goldenrod;
+    }
+
+    div.exp ul.activities {
+        margin-top: 0.25rem;
+        margin-left: 1rem;
+    }
+    div.exp ul.activities li {
+        font-size: 10px;
+        line-height: 1rem;
+    } 
+
+    ul.abilities-list {
+        margin-left: 1rem;
+    }
+ 
+    ul.abilities-list li {
+        list-style: none;
+        font-size: 12px; 
+        line-height: 20px;
+    }
+    ul.projects { margin-left: 1rem; }
+    ul.projects li img.img-surface { height: 50px; width: 250px; }
+    ul.projects li img.img-utpk { height: 40px; width: 176px; }
+    ul.projects li img.img-tadi { height: 40px; width: 102px; }
+    ul.projects li { 
+        list-style: none;
+        font-size: 12px; 
+        line-height: 20px;
+    }
+    ul.projects li a { text-decoration: none; color: var(--dark); }
+
+    ul.contact-info {
+        margin: 1rem 0;
+    }
+
+    ul.contact-info li {
+        list-style: none;
+        font-size: 12px;
+        margin: 0.2rem 0;
+        color: white;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    ion-icon { 
+        font-size: 1.5rem;
+    }
+    ul.education {
+        margin: 0.5rem auto;
+    }
+    ul.education li {
+        color: white;
+        list-style: none;
+        text-align: left;
+        font-size: 12px;
+        white-space: nowrap;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+    ul.education li:last-child {
+        text-align: center;
+        font-size: 14px;
+        color: goldenrod;
+    }
+
+    span.language {
+        display: block;
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+        margin: 0.5rem auto;
+        text-align: center;
+        
+    }
+}
