@@ -7,9 +7,9 @@ const experiences = [
             to: "Actual"
         },
         activities: [
-            "Administración y coordinacion de proyectos.",
-            "Desarrollador de plataformas web.",
-            "Administración de bases de datos.",
+            "Administración y coordinacion de proyectos web.",
+            "Desarrollador de plataformas web manejando la libreria React JS.",
+            "Administración de bases de datos mediante Firebase Realtime Database, Firestore y MongoDB.",
             "Analisis de datos y optimización de código"
         ] 
     },
@@ -20,25 +20,35 @@ const experiences = [
             since: "Abr 2021",
             to: "Dic 2021"
         },
-        activities: [
-            "Administración de proyectos.",
-            "Coordinacion y desarrollo de sistemas web.",
-            "Administración de bases de datos.",
+        activities: [ 
+            "Coordinacion, Administración y desarrollo de sistemas web.",
+            "Administración de bases de datos mediante Firebase Realtime Database y Firestore.",
             "Supervisión de implementaciones de desarrollo."
         ] 
     },
     {
+        company: "Ark Public",
+        position: "Desarrollador Front-end",
+        time: {
+            since: "Freelance",
+            to: ""
+        },
+        activities: [
+            "Mejoramiento de la experiencia y performance de sitios web y langing pages.",
+            "Desarrollo de frameworks de diseño con CSS.",
+            "Analisis de datos y optimización de código"
+        ] 
+    },
+    {
         company: "GSEnergia ",
-        position: "Desarrollador Web",
+        position: "Desarrolador Web",
         time: {
             since: "May 2015",
             to: "Dic 2020"
         },
         activities: [
-            "Desarrollo de plataformas web.",
-            "Administración de bases de datos.",
-            "Analisis de datos y optimización de código",
-            "implementacion de nuevas funcionalidades"
+            "Desarrollo de plataformas web utilizando HTML5, CSS3, JS, C#, ASP.NET.",
+            "Administración de bases de datos mediante SQL Server." 
         ] 
     }
 ]
@@ -56,8 +66,8 @@ const jobExperience = () => {
                 <ul class="activities">
                     <li>${e.activities[0]}</li>
                     <li>${e.activities[1]}</li>
-                    <li>${e.activities[2]}</li>
-                    <li>${e.activities[3]}</li>
+                    ${e.activities[2] !== undefined ? `<li>${e.activities[2]}</li>` : ``}
+                    ${e.activities[3] !== undefined ? `<li>${e.activities[3]}</li>` : ``}
                 </ul>
             </div>
             `;

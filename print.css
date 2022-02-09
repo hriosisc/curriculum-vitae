@@ -171,11 +171,17 @@
     }
   
     div.exp h1.exp-company,
-    div.exp h2.exp-title,
     div.exp h3.since-to {
         font-size: 12px;
         text-transform: uppercase;
     }
+
+    div.exp h2.exp-title {
+        font-size: 11px;
+        text-transform: uppercase;
+        color: var(--gray-dark);
+    }
+
     div.exp h3.since-to { 
         color: goldenrod;
     }
@@ -252,7 +258,7 @@
         font-size: 14px;
         font-weight: 400;
         margin: 0.5rem auto;
-        text-align: center;
+        text-align: start;
         
     }
 }
