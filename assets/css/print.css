@@ -1,0 +1,50 @@
+header {  
+    width: var(--header-x);
+    height: var(--header-y);
+    top: var(--space-y);
+    left: 0;
+    z-index: 25;
+}
+    
+header div.name-title { 
+    left: calc(var(--aside-x) + var(--space-x)); 
+    width: calc(8.5in - var(--aside-x) - var(--space-x));
+    height: var(--header-y); 
+}
+
+header h1.name {
+    font-size: 3.5rem; 
+} 
+
+aside {  
+    width: var(--aside-x);
+    height: var(--aside-y);
+    top: 0;
+    left: var(--space-x);
+    z-index: 28;
+}
+
+aside div.cv-photo {  
+    top: var(--space-y); 
+    left: 0;
+    width: var(--aside-x);
+    height: var(--header-y);
+}
+
+aside div.cv-photo img{ 
+    border: 3px solid whitesmoke;
+} 
+
+aside div.resume-information { 
+    top: var(--space-y); 
+} 
+
+main {  
+    width: calc(8.5in - var(--aside-x) - var(--space-x)); 
+    top: calc(var(--space-y) + var(--header-y));
+    left: calc(var(--space-x) + var(--aside-x)); 
+}   
+
+ion-icon { 
+    font-size: 1.5rem!important;
+} 

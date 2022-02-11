@@ -4,87 +4,139 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="print.css" media="print">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="./css/material_icons.css" />
+    <title>CV - Héctor Ríos</title>
+    <link rel="stylesheet" href="./assets/css/designerUI.css"> 
+    <link rel="stylesheet" href="./assets/css/print.css">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <!-- <link href="./assets/css/material_icons.css" /> -->
 </head>
 <body>
-    <div id="app"> 
-        <header>
-            <div class="name-title">
-                <h1 class="name">Héctor Ríos</h1> 
-                <h1 class="position">Front-end Developer</h1>
+    <div class="bg-smoke print-letter relative" id="app"> 
+
+        <!-- Header -->
+        <header class="fixed bg-dark">
+            <div class="name-title relative flex-c jc-center">
+                <h1 class="upper white ml-24 fw-light name">Héctor Ríos</h1> 
+                <h1 class="upper white ml-24 letter-space fs-16 fw-500">Front-end Developer</h1>
             </div>
         </header>
-        <aside>
-            <div class="profile-pic-container">
-                <img src="imgs/me.png" alt="photo">
+        <!-- Aside -->
+        <aside class="fixed bg-gray">
+            <div class="relative cv-photo">
+                <img class="transform-centered x70p  no-corners" src="./assets/imgs/me.png" alt="photo">
             </div>
-            <div class="resume-information">
-                <h1 class="profile">Sobre mi</h1>
-                <p>
-                    Soy Héctor Manuel Ríos Vazquez. Desarrollador web residente en Tijuana, Baja California. Autónomo y perseverante en la busqueda de información. Con la constancia de aprender alguna tecnología nueva y métodos efectivos para resolución de problemas que se presenten. 
+            <div class="resume-information block relative m-16">
+                <h1 class="white header upper tcenter"> Sobre mi </h1>
+                <p class="white fs-10 mt-16 lh-16 tjustify">
+                    Soy Héctor Manuel Ríos Vazquez. Desarrollador web residente en Tijuana, Baja California. 
+                    Autónomo y perseverante en la busqueda de información. 
+                    Con la constancia de aprender alguna tecnología nueva y métodos efectivos para resolución de problemas que se presenten. 
                 </p>
-                <hr />
-                <h1 class="profile">Formación</h1>
-                    <ul class="education">
-                        <li>Instituto Tecnológico de Tijuana</li>
-                        <li>Ing. Sistemas Computacionales</li>
-                        <li>2010 - 2015</li> 
+                <hr class="white mx-8auto x100p op-50" />
+                <h1 class="white header upper tcenter">Formación</h1>
+                    <ul class="mx-8auto no-style">
+                        <li class="white tcenter fs-10 fw-500 lh-16">Instituto Tecnológico de Tijuana</li>
+                        <li class="white tcenter fs-10 fw-500 lh-16">Ing. Sistemas Computacionales</li>
+                        <li class="gold tcenter fs-14 fw-500 lh-16 mt-8">2010 - 2015</li> 
                     </ul>
-                <hr />
-                <h1 class="profile">Contacto</h1>
-                <ul class="contact-info">
-                    <li><ion-icon name="logo-whatsapp"></ion-icon>(664) 311 4285</li>
-                    <li><ion-icon name="call-outline"></ion-icon>(663) 103 2623</li>
-                    <li><ion-icon name="mail-outline"></ion-icon>hrios.isc@gmail.com</li>
-                    <li><ion-icon name="id-card-outline"></ion-icon>Visa Laser B1/B2</li>
-                    <li><ion-icon name="person-outline"></ion-icon>Casado</li> 
-                    <li><ion-icon name="logo-github"></ion-icon>/hriosisc</li>
-                    <li><ion-icon name="logo-linkedin"></ion-icon>/hriosisc</li>
+                <hr class="white mx-8auto x100p op-50" />
+                <h1 class="white header upper tcenter">Contacto</h1>
+                <ul class="mx-16auto no-style">
+                    <li class="fs-10 mx-4auto white flex jc-start gap-8 ai-center">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                        (664) 311 4285
+                    </li>
+                    <li class="fs-12 mx-4auto white flex jc-start gap-8 ai-center">
+                        <ion-icon name="call-outline"></ion-icon>
+                        (663) 103 2623
+                    </li>
+                    <li class="fs-12 mx-4auto white flex jc-start gap-8 ai-center">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        hrios.isc@gmail.com
+                    </li>
+                    <li class="fs-12 mx-4auto white flex jc-start gap-8 ai-center">
+                        <ion-icon name="id-card-outline"></ion-icon>
+                        Visa Laser B1/B2
+                    </li>
+                    <li class="fs-12 mx-4auto white flex jc-start gap-8 ai-center">
+                        <ion-icon name="person-outline"></ion-icon>
+                        Casado
+                    </li> 
+                    <li class="fs-12 mx-4auto white flex jc-start gap-8 ai-center">
+                        <ion-icon name="logo-github"></ion-icon>
+                        /hriosisc
+                    </li>
+                    <li class="fs-12 mx-4auto white flex jc-start gap-8 ai-center">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                        /hriosisc
+                    </li>
                 </ul>
-                <hr />               
-                <h1 class="profile">Idiomas</h1>
-                
-                <span class="language">Español: Nativo</span>
-                <span class="language">Ingles: Intermedio</span>
+                <hr class="white mx-8auto x100p op-50" />           
+                <h1 class="white header upper tcenter">Idiomas</h1>                
+                <span class="block white fs-14 fw-400 mx-8auto tstart">Español: Nativo</span>
+                <span class="block white fs-14 fw-400 mx-8auto tstart">Ingles: Intermedio</span>
             </div>
         </aside> 
-        <main>
-            <div class="container">
-                <div class="row job-experience">
-                    <h1 class="title">Experiencia laboral</h1>                     
-                </div> 
-                <div class="row abilities">
-                    <h1 class="title">Habilidades y Competencias</h1>
-                    <ul class="abilities-list">
-                        <li><b>Lenguajes:</b> HTML5, CSS3, Javascript, C#, PHP.</li>
-                        <li><b>Frameworks:</b> React JS, Vue JS, Node Js + Express, Laravel, ASP.NET.</li>
-                        <li><b>Bases de Datos:</b> SQL Server, MySQL, Firebase, MongoDB + Mongoose.</li>
-                        <li><b>Librerias:</b> Charts JS, Leaflet, Datatables, JQuery.</li>
-                        <li><b>DevOps:</b> GIT, Azure DevOps, Kanbanflow, Jira Software.</li>
+        <!-- Main -->
+        <main class="fixed y100p p-24"> 
+            <div class="container">                
+                <div class="mb-32 job-experience">
+                    <h1 class="black upper lh-16 fs-16 fw-500 mb-16">Experiencia laboral</h1>                     
+                </div>                 
+                <div class="mb-32">
+                    <h1 class="black upper lh-16 fs-16 fw-500 mb-16">Habilidades y Competencias</h1>
+                    <ul class="ml-16 no-style">
+                        <li class="no-style fs-10 lh-16">
+                            <b>Lenguajes:</b> 
+                            HTML5, CSS3, Javascript, C#, PHP.
+                        </li>
+                        <li class="no-style fs-10 lh-16">
+                            <b>Frameworks:</b> 
+                            React JS, Vue JS, Node Js + Express, Laravel, ASP.NET.
+                        </li>
+                        <li class="no-style fs-10 lh-16">
+                            <b>Bases de Datos:</b> 
+                            SQL Server, MySQL, Firebase, MongoDB + Mongoose.
+                        </li>
+                        <li class="no-style fs-10 lh-16">
+                            <b>Librerias:</b> 
+                            Charts JS, Leaflet, Datatables, JQuery.
+                        </li>
+                        <li class="no-style fs-10 lh-16">
+                            <b>DevOps:</b> 
+                            GIT, Azure DevOps, Kanbanflow, Jira Software.
+                        </li>
                     </ul> 
-                </div>
-                <div class="row projects">
-                    <h1 class="title">Logros y proyectos personales</h1>
-                    <ul class="projects">
-                        <li>
-                            <!-- <img class="img-surface" src="./imgs/logoSurface.png" alt=""> -->
-                            <b>Diseño de Framework CSS: </b><a href="https://arkpublic.com/surfaceplus">https://arkpublic.com/surfaceplus</a></li>
-                        <li>
-                            <!-- <img class="img-utpk"src="./imgs/logoutpk2017-01.png" alt=""> -->
-                            <b>Diseño de Framework CSS: </b><a href="https://utpk.com.mx">https://utpk.com.mx</a></li>
-                        <li>
-                            <!-- <img class="img-tadi"src="./imgs/tadi_logo.png" alt=""> -->
-                            <b>Landing page: </b><a href="https://tadi.app">https://tadi.app</a></li>
+                </div>                
+                <div class="mb-32">
+                    <h1 class="black upper lh-16 fs-16 fw-500 mb-16">Logros y proyectos personales</h1>
+                    <ul class="ml-16 no-style">
+                        <li class="no-style fs-10 lh-16"> 
+                            <b>Diseño de Framework CSS: </b> 
+                            <a class="no-style black" href="https://arkpublic.com/surfaceplus"> 
+                                https://arkpublic.com/surfaceplus 
+                            </a> 
+                        </li>
+                        <li class="no-style fs-10 lh-16"> 
+                            <b>Diseño de Framework CSS: </b> 
+                            <a class="no-style black" href="https://utpk.com.mx"> 
+                                https://utpk.com.mx
+                            </a> 
+                        </li>
+                        <li class="no-style fs-10 lh-16"> 
+                            <b>Landing page: </b> 
+                            <a class="no-style black" href="https://tadi.app"> 
+                                https://tadi.app 
+                            </a> 
+                        </li>
                     </ul>
                 </div> 
+                
             </div>
         </main> 
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="app.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>

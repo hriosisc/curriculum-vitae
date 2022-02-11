@@ -59,15 +59,15 @@ const jobExperience = () => {
 
     experiences.forEach(e=> {
         const experienceContainer = `
-            <div class="exp">
-                <h1 class="exp-company">${e.company}</h1>
-                <h2 class="exp-title">${e.position}</h2>
-                <h3 class="since-to">${e.time.since} - ${e.time.to}</h3> 
-                <ul class="activities">
-                    <li>${e.activities[0]}</li>
-                    <li>${e.activities[1]}</li>
-                    ${e.activities[2] !== undefined ? `<li>${e.activities[2]}</li>` : ``}
-                    ${e.activities[3] !== undefined ? `<li>${e.activities[3]}</li>` : ``}
+            <div class="m-16">
+                <h1 class="title upper">${e.company}</h1>
+                <h2 class="subtitle upper black">${e.position}</h2>
+                <h3 class="fs-12 upper gold">${e.time.since} - ${e.time.to}</h3> 
+                <ul class="ml-16">
+                    <li class='fs-10 lh-16'>${e.activities[0]}</li>
+                    <li class='fs-10 lh-16'>${e.activities[1]}</li>
+                    ${e.activities[2] !== undefined ? `<li class='fs-10 lh-16'>${e.activities[2]}</li>` : ``}
+                    ${e.activities[3] !== undefined ? `<li class='fs-10 lh-16'>${e.activities[3]}</li>` : ``}
                 </ul>
             </div>
             `;
