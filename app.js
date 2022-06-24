@@ -1,4 +1,4 @@
-const experiences = [ 
+const experiences = [
     {
         company: "IDG - Innovation Digital Group ",
         position: "Desarrollador Front-end",
@@ -11,7 +11,7 @@ const experiences = [
             "Desarrollador de plataformas web manejando la libreria React JS.",
             "Administración de bases de datos mediante Firebase Realtime Database, Firestore y MongoDB.",
             "Analisis de datos y optimización de código"
-        ] 
+        ]
     },
     {
         company: "Sistema Integral de Transporte de Tijuana",
@@ -20,24 +20,24 @@ const experiences = [
             since: "Abr 2021",
             to: "Dic 2021"
         },
-        activities: [ 
+        activities: [
             "Coordinacion, Administración y desarrollo de sistemas web.",
             "Administración de bases de datos mediante Firebase Realtime Database y Firestore.",
             "Supervisión de implementaciones de desarrollo."
-        ] 
+        ]
     },
     {
         company: "Ark Public",
         position: "Desarrollador Front-end",
         time: {
             since: "Freelance",
-            to: ""
+            to: "Today"
         },
         activities: [
             "Mejoramiento de la experiencia y performance de sitios web y langing pages.",
             "Desarrollo de frameworks de diseño con CSS.",
             "Analisis de datos y optimización de código"
-        ] 
+        ]
     },
     {
         company: "GSEnergia ",
@@ -48,8 +48,8 @@ const experiences = [
         },
         activities: [
             "Desarrollo de plataformas web utilizando HTML5, CSS3, JS, C#, ASP.NET.",
-            "Administración de bases de datos mediante SQL Server." 
-        ] 
+            "Administración de bases de datos mediante SQL Server."
+        ]
     }
 ]
 
@@ -57,7 +57,7 @@ const jobExperience = () => {
 
     const expContainer = document.getElementsByClassName("job-experience")[0];
 
-    experiences.forEach(e=> {
+    experiences.forEach(e => {
         const experienceContainer = `
             <div class="m-16">
                 <h1 class="title upper">${e.company}</h1>
